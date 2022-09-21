@@ -1,0 +1,36 @@
+{
+  "name": "mymultiplayerchessgamebackend",
+  "version": "1.0.0",
+  "description": "Multi player chess game backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamdev-james/MyMultiPlayerChessGameBackend.git"
+  },
+  "keywords": [
+    "Chess",
+    "Web",
+    "RTC",
+    "simple-peer",
+    "konva",
+    "react-konva"
+  ],
+  "dependencies": {
+    "express": "4.17.1",
+    "socket.io": "2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.4"
+  },
+  "author": "Dev. James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamdev-james/MyMultiPlayerChessGameBackend/issues"
+  },
+  "homepage": "https://github.com/iamdev-james/MyMultiPlayerChessGameBackend#readme"
+}
