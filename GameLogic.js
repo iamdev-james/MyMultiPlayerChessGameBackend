@@ -54,6 +54,7 @@
   })
 }
 
+// Trigger when a player join game
 function playerJoinsGame(idData) {
   /**
    * Joins the given socket to a session with it's gameId
@@ -92,3 +93,12 @@ function playerJoinsGame(idData) {
       this.emit('status' , "There are already 2 people playing in this room." );
   }
 }
+
+function createNewGame(gameId) {
+    // Return the Room ID (gameId) and the socket ID (mySocketId) to the browser client
+    this.emit('createNewGame', {gameId: gameId, mySocketId: this.id});
+
+    // Join the Room and wait for the other player
+    this.join(gameId)
+}
+
